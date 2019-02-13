@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Password checker</title>
+<link rel="shortcut icon" href="ic/favicon.ico" />
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/console.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+  font-family: 'Roboto', sans-serif;
+}
+.btn {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #e7e7e7;
+  color: black;
+}
+.btn:hover {
+  background: #e7e7e7;
+}
+.inpt {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: /* WARNING:  */;
+  border-color: #e7e7e7;
+  color: black;
+}
+.inpt:hover {
+  background: #e7e7e7;
+  border: 2px solid black;
+}
+.inpt:focus {
+  background: #e7e7e7;
+  border: 2px solid green;
+}
+</style>
+</head>
+<body>
+<center>
+<br>
+ <div id="container">
+  <h1 id="title">PASSWORD CHECKER</h1>
+  <h3 id="infotext">Insert the password below to access the private informations</h3>
+  <input type="text" class="inpt" id="userInput" autocomplete="true" placeholder="ContentID"></input>
+  <input type="password" class="inpt" id="passInput" autocomplete="true" placeholder="Password"></input>
+  <br>
+  <button class="btn" onclick="enter(document.getElementById('passInput').value);">LOGIN</button>
+ </div>
+</center>
+</body>
+<html>
