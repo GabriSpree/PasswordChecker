@@ -14,7 +14,7 @@
   cursor: pointer;
   border-color: #C1C0AA;
   color: black;
-  margin-top: auto;
+  margin-top: 10px;
 }
 .btn:hover {
   background: #C1C0AA;
@@ -40,10 +40,15 @@
 }
 
 a, .link {
+  display: inline;
   text-decoration: none;
   font-weight: bold;
   transition: 0.5s;
-  color: #
+  color: #AEB6BF;
+}
+
+a:hover, .link:hover {
+  color: #808000;
 }
 
 footer, .footer {
@@ -51,9 +56,12 @@ footer, .footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
-  color: white;
+  background-color: #e7e7e7;
+  color: black;
+  font-weight: lighter;
   text-align: center;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
 }
 
 /*
@@ -62,26 +70,14 @@ footer, .footer {
 ||////////////////////////////////////////////////////////////////////////////////////////////
 */
 
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-}
-
 /* The popup form - hidden by default */
 .popup {
   display: none;
   position: fixed;
-  bottom: 0;
+  bottom: footer-height;
   right: 15px;
   border: 3px solid #f1f1f1;
+  border-radius: 20px;
   z-index: 9;
 }
 
@@ -99,12 +95,15 @@ footer, .footer {
   margin: 5px 0 22px 0;
   border: none;
   background: #f1f1f1;
+  border-radius: 20px;
+  transition: 0.7s;
 }
 
 /* When the inputs get focus, do something */
 .popup-container input[type=text]:focus, .popup-container input[type=password]:focus {
   background-color: #ddd;
   outline: none;
+  border-radius: 10px;
 }
 
 /* Set a style for the submit/login button */
@@ -117,6 +116,8 @@ footer, .footer {
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
+  border-radius: 20px;
+  transition: 0.5s;
 }
 
 /* Add a red background color to the cancel button */
@@ -125,6 +126,6 @@ footer, .footer {
 }
 
 /* Add some hover effects to buttons */
-.popup-container .popup-btn:hover, .open-button:hover {
-  opacity: 1;
+.popup-container .popup-btn:hover {
+  opacity: inherit;
 }
