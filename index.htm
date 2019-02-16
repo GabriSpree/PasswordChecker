@@ -25,8 +25,22 @@
   <br>
  </div>
 </center>
-<footer>
-  <p>If you need to access specific data <a href="#" onclick="loadIdLogin(true)">click here</a> and login with the id</p>
+<div class="popup" id="popup">
+  <form action="//numberundefined.000webhostapp.com/action_page.php" class="popup-container" method="post">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email:</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password:</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="popup-btn">Login</button>
+    <button type="submit" class="popup-btn cancel" onclick="showIdLogin(false)">Close</button>
+  </form>
+</div>
+<footer class="footer">
+  <p>If you need to access specific data <a href="#" onclick="showIdLogin(true)">click here</a> and login with the id</p>
 </footer>
 </body>
 <html>
