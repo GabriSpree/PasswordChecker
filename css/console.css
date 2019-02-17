@@ -39,6 +39,7 @@
   background: #e7e7e7;
   border: 2px solid green;
   border-radius: 10px;
+  outline: none;
 }
 
 a, .link {
