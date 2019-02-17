@@ -74,7 +74,7 @@ footer, .footer {
 .popup {
   display: none;
   position: fixed;
-  bottom: footer-height;
+  bottom: 15px;
   right: 15px;
   border: 3px solid #f1f1f1;
   border-radius: 20px;
