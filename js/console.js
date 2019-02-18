@@ -2,6 +2,12 @@
 var userInput = document.getElementById("userInput");
 var passInput = document.getElementById("passInput");
 
+/*
+function userHandler(_value) {
+ alert("Ciao: " + _value);
+}
+*/
+
 const $userInput = document.querySelector('#userInput');
 const $passInput = document.querySelector('#passInput');
 
@@ -27,3 +33,4 @@ $userInput.addEventListener('input', userHandler);
 $userInput.addEventListener('propertychange', userHandler);
 $passInput.addEventListener('input', passHandler);
 $passInput.addEventListener('propertychange', passHandler);
+// Should be disabled
