@@ -2,12 +2,26 @@
 var userInput = document.getElementById("userInput");
 var passInput = document.getElementById("passInput");
 
-/*
-function userHandler(_value) {
- alert("Ciao: " + _value);
-}
-*/
 
+function userHandler(_value) {
+ var userValue = _value;
+  if (userValue.contains("admi")) {
+    userInput.maxlength = "8";
+  } else {
+    userInput.maxlength = "4";
+  }
+}
+
+function passHandler(_value) {
+ var passValue = _value;
+  if (passValue.contains("000a") {
+    passInput.maxlength = "9";
+  } else {
+    passInput.maxlength = "4";
+  }
+}
+
+/*
 const $userInput = document.querySelector('#userInput');
 const $passInput = document.querySelector('#passInput');
 
@@ -34,3 +48,4 @@ $userInput.addEventListener('propertychange', userHandler);
 $passInput.addEventListener('input', passHandler);
 $passInput.addEventListener('propertychange', passHandler);
 // Should be disabled
+*/
