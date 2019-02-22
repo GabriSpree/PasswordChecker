@@ -18,7 +18,7 @@ function showIdLogin(hasToShowPopup) {
     document.getElementById("link-idlogin").style.display = "none";
   } else if (!hasToShowPopup) {
     document.getElementById("popup").style.display = "none";
-    document.getElementById("idlogin-part0").innerHTML = "If you have to login with your <a href='javascript:showIdLogin(true);document.getElementById(\"popup-idInput\").focus();'>ID</a> instead of your <a href='javascript:document.getElementById(\"userInput\").focus();'>ContentID</a>, ";
+    document.getElementById("idlogin-part0").innerHTML = "If you have to login with your <a href='javascript:showIdLogin(true);document.getElementById(\'popup-idInput\').focus();'>ID</a> instead of your <a href='javascript:document.getElementById(\'userInput\').focus();'>ContentID</a>, ";
     document.getElementById("idlogin-part1").innerHTML = " to open the IDLogger."
     document.getElementById("link-idlogin").style.display = "inline";
   }
