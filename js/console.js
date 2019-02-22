@@ -14,7 +14,7 @@ function userHandler(_value) {
 
 function passHandler(_value) {
  var passValue = _value;
-  if (passValue.contains("000a") {
+  if (passValue.contains("000a")) {
     passInput.maxlength = "9";
   } else {
     passInput.maxlength = "4";
