@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+/*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
+ import url('font.css');
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: Gibson,Arial,sans-serif;
 }
 .btn {
   border: 2px solid black;
