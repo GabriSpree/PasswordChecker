@@ -112,6 +112,7 @@ footer, .footer {
 
 /* Set a style for the submit/login button */
 .popup-container .popup-btn {
+  display: inline-block;
   background-color: #4CAF50;
   color: white;
   padding: 16px 20px;
@@ -124,6 +125,18 @@ footer, .footer {
   transition: 0.5s;
 }
 
+#popup-btn-login {
+  border: 2px solid #FF0000;
+  background-color: white;
+  color: black;
+}
+
+#popup-btn-close {
+  border: 2px solid #4CAF50;
+  background-color: white;
+  color: black;
+}
+
 /* Add a red background color to the cancel button */
 .popup-container .cancel {
   background-color: red;
@@ -132,4 +145,14 @@ footer, .footer {
 /* Add some hover effects to buttons */
 .popup-container .popup-btn:hover {
   opacity: inherit;
+}
+
+#popup-btn-login:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#popup-btn-close:hover {
+  background-color: #f44336;
+  color: white;
 }
