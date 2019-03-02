@@ -16,15 +16,16 @@
 <center>
 <br>
  <div id="container">
-  <h1 id="title">PORTAL LOGIN</h1>
-  <h3 id="infotext">Insert the <a href="javascript:document.getElementById('passInput').focus()">password</a> below to access your <a href="javascript:document.getElementById('userInput').focus()">Content(ID)</a>'s data (could be a file...)</h3>
-  <form action="https://numberundefined.000webhostapp.com/idlogger.php" method="post">
-  <input type="text" name="id" class="inpt" id="userInput" onkeypress="userHandler(this.value)" autocomplete="true" placeholder="ContentID" maxlength="4" required></input>
-  <input type="password" name="pwd" class="inpt" id="passInput" onkeypress="passHandler(this.value)" autocomplete="true" placeholder="Password" maxlength="4" required></input>
-  <br>
-  <button class="btn" type="submit" onclick="enter(document.getElementById('passInput').value);">LOGIN</button>
-  </form>
-  <br>
+   <h1 id="title">PORTAL LOGIN</h1>
+   <h3 id="infotext">Insert the <a href="javascript:document.getElementById('passInput').focus()">password</a> below to access your <a href="javascript:document.getElementById('userInput').focus()">Content(ID)</a>'s data (could be a file...)</h3>
+   <form action="https://numberundefined.000webhostapp.com/idlogger.php" method="post">
+     <input type="text" name="id" class="inpt" id="userInput" onkeypress="userHandler(this.value)" autocomplete="true" placeholder="ContentID" maxlength="4" required></input>
+     <input type="password" name="pwd" class="inpt" id="passInput" onkeypress="passHandler(this.value)" autocomplete="true" placeholder="Password" maxlength="4" required></input>
+     <input type="hidden" id="sKeyInput" name="skey" value="blank">
+     <br>
+     <button class="btn" type="submit" onclick="enter(document.getElementById('passInput').value);">LOGIN</button>
+   </form>
+   <br>
  </div>
 </center>
 <div class="popup" id="popup">
@@ -37,12 +38,14 @@
 
     <label for="psw"><b>Permission password:</b></label>
     <input type="password" autocomplete="false" placeholder="Enter Password" name="pwd" id="popup-passInput" required>
+    <input type="hidden" id="sKeyInput_p" name="skey" value="blank">
 
     <button type="submit" class="popup-btn" id="popup-btn-login">Login</button>
     <button type="button" class="popup-btn" id="popup-btn-close" onclick="showIdLogin(false)">Close</button>
   </form>
   </div>
 </div>
+<p id="sKeyShower" style="display: none;bottom: 0;text-align: center;width: device-width;"></p>
 <footer class="footer">
   <p><span id="idlogin-part0">If you have to login with your <a href="javascript:showIdLogin(true);document.getElementById('popup-idInput').focus();">ID</a> instead of your <a href="javascript:document.getElementById('userInput').focus()">ContentID</a>, </span><a id="link-idlogin" href="javascript:showIdLogin(true);">click here</a><span id="idlogin-part1"> to open the IDLogger.</span></p>
 </footer>
