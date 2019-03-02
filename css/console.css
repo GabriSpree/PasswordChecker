@@ -126,13 +126,13 @@ footer, .footer {
 }
 
 #popup-btn-login {
-  border: 2px solid #FF0000;
+  border: 2px solid #4CAF50;
   background-color: white;
   color: black;
 }
 
 #popup-btn-close {
-  border: 2px solid #4CAF50;
+  border: 2px solid #FF0000;
   background-color: white;
   color: black;
 }
