@@ -42,7 +42,7 @@ function makeKeyId(hasToSet, hasToDestroy) {
     sKeyInput.value = stext;
     sKeyInput_p.value = stext;
 
-    for (var r0 = 0; r0 < 1000; r0++) {
+    for (var r0 = 0; r0 < 10; r0++) {
       stext2 += spossible.charAt(Math.floor(Math.random() * spossible.length));
     }
 
