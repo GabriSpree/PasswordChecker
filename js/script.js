@@ -31,7 +31,7 @@ function makeKeyId(hasToSet, hasToDestroy) {
 
   var stext = "";
   var stext2 = "";
-  var spossible = "AbCdEfGhIjKlMnOpQrStUvWxYzaBcDeFgHiJkLmNoPqRsTuVwXyZ7946281305";
+  var spossible = "AbCdEfGhIjKlMnOpQrStUvWxYzaBcDeFgHiJkLmNoPqRsTuVwXyZ_7946281305";
 
   if (hasToSet) {
 
