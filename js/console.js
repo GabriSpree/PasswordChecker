@@ -5,7 +5,7 @@ var passInput = document.getElementById("passInput");
 
 function userHandler(_value) {
  var userValue = _value;
-  if (userValue.contains("admi")) {
+  if (userValue.includes("admi")) {
     userInput.maxlength = "8";
   } else {
     userInput.maxlength = "4";
@@ -14,7 +14,7 @@ function userHandler(_value) {
 
 function passHandler(_value) {
  var passValue = _value;
-  if (passValue.contains("000a")) {
+  if (passValue.includes("000a")) {
     passInput.maxlength = "9";
   } else {
     passInput.maxlength = "4";
