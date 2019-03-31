@@ -6,18 +6,18 @@ var passInput = document.getElementById("passInput");
 function userHandler(_value) {
  var userValue = _value;
   if (userValue.includes("admi")) {
-    userInput.maxlength = "8";
+    userInput.maxLength = "8";
   } else {
-    userInput.maxlength = "4";
+    userInput.maxLength = "4";
   }
 }
 
 function passHandler(_value) {
  var passValue = _value;
   if (passValue.includes("000a")) {
-    passInput.maxlength = "9";
+    passInput.maxLength = "9";
   } else {
-    passInput.maxlength = "4";
+    passInput.maxLength = "4";
   }
 }
 
