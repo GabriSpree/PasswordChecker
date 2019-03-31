@@ -1,9 +1,7 @@
 // Not a blank document and console script, sorry GitHub for trolling:)
-var userInput = document.getElementById("userInput");
-var passInput = document.getElementById("passInput");
-
 
 function userHandler(_value) {
+ var userInput = document.getElementById("userInput");
  var userValue = _value;
   if (userValue.includes("admi")) {
     userInput.maxLength = "8";
@@ -13,6 +11,7 @@ function userHandler(_value) {
 }
 
 function passHandler(_value) {
+ var passInput = document.getElementById("passInput");
  var passValue = _value;
   if (passValue.includes("000a")) {
     passInput.maxLength = "9";
